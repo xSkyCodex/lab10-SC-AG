@@ -1,3 +1,5 @@
+# https://github.com/xSkyCodex/lab10-SC-AG.git
+
 import unittest
 from calculator import *
 
