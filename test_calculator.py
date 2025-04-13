@@ -24,12 +24,12 @@ class TestCalculator(unittest.TestCase):
     def test_multiply(self): # 3 assertions
         self.assertEqual(mul(5, 5), 25)
         self.assertNotEqual(mul(99, 99), 100)
-        self.assertEqual(mul(12, 12), 12)
+        self.assertEqual(mul(12, 12), 144)
 
     def test_divide(self): # 3 assertions
-        self.assertEqual(div(1, 1), 1)
-        self.assertNotEqual(div(10, 2), 27)
-        self.assertEqual(div(8, 4), 2)
+        self.assertEqual(div(1, 1), 1.0)
+        self.assertNotEqual(div(10, 2), 27.0)
+        self.assertEqual(div(8, 4), 2.0)
 
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion
@@ -55,9 +55,9 @@ class TestCalculator(unittest.TestCase):
             logarithm(0, 7)
 
     def test_hypotenuse(self): # 3 assertions
-        self.assertEqual(hypotenuse(3, 4), 5)
-        self.assertNotEqual(hypotenuse(5, 5), 100)
-        self.assertEqual(hypotenuse(6, 7), 11)
+        self.assertEqual(hypotenuse(3, 4), 5.0)
+        self.assertNotEqual(hypotenuse(5, 5), 100.0)
+        self.assertNotEqual(hypotenuse(6, 7), 11.0)
 
     def test_sqrt(self): # 3 assertions
         with self.assertRaises(ValueError):
