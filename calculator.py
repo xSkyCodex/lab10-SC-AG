@@ -14,12 +14,12 @@ def mul(a, b):
     return a * b
 
 def div(a, b):
-    if a == 0:
+    if b == 0:
         raise ZeroDivisionError("Can't divide by zero!")
-    return b / a
+    return a / b
 
 def logarithm(base, argument):
-    if a <= 0 or b <= 0:
+    if base <= 0 or argument <= 0:
         raise ValueError("Must be real numbers or greater than zero!")
     return math.log(argument, base)
 
