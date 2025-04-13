@@ -4,6 +4,16 @@
 
 import math
 
+def square_root(a):
+    if a < 0:
+        raise ValueError("Must be a real number!")
+    return math.sqrt(a)
+
+def hypotenuse(a, b):
+    a = abs(a)
+    b = abs(b)
+    return math.hypot(a, b)
+
 def add(a ,b):
     return a + b
 
