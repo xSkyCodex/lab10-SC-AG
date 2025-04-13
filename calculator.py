@@ -18,10 +18,10 @@ def div(a, b):
         raise ZeroDivisionError("Can't divide by zero!")
     return b / a
 
-def logarithm(a, b):
-    if a >= 0 or b >= 0:
+def logarithm(base, argument):
+    if a <= 0 or b <= 0:
         raise ValueError("Must be real numbers or greater than zero!")
-    return math.log(b, a)
+    return math.log(argument, base)
 
 def exp(a, b):
     return a ** b
