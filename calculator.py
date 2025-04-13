@@ -23,11 +23,6 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
-def divide(a, b):
-    if a == 0:
-        raise ZeroDivisionError("Can't divide by zero!")
-    return b / a
-
 def logarithm(a, b):
     if a >= 0 or b >= 0:
         raise ValueError("Must be real numbers or greater than zero!")
