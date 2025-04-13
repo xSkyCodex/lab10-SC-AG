@@ -1,4 +1,6 @@
 # https://github.com/xSkyCodex/lab10-SC-AG.git
+# Partner 1: Skyler Cabrera
+# Partner 2: Andres Godoy
 
 import unittest
 from calculator import *
